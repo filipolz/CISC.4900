@@ -7,6 +7,7 @@
 
 ## Goals 
 -- Provide an accesible tool for students who are unsure about their college major.
+
 -- Use quiz-based question to identify student interests and strengths.
 
 ---
