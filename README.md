@@ -6,16 +6,15 @@
 ---
 
 ## Goals 
--- Provide an accesible tool for students who are unsure about their college major.
-
--- Use quiz-based question to identify student interests and strengths.
+* Provide an accesible tool for students who are unsure about their college major.
+*  Use quiz-based question to identify student interests and strengths.
 
 ---
 
 ## Technologies Used 
--- HTML
--- CSS 
--- JavaScript
+* HTML
+* CSS 
+* JavaScript
 
 ---
 
