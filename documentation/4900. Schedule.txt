@@ -1,0 +1,31 @@
+﻿Week 6 : 9/30/2025 - 10/6/2025
+* Write the rest of the answers to the questions: Time - 2 hours 
+* Determine the values for each major: Time - 5 hours 
+* Determine the values for each answer: Time - 5 hours
+
+
+Week 7 : 10/7/2025 - 10/13/2025
+* Write pseudocode for user profile and major comparison: Time - 3 hours
+* Write javascript for the comparison algo: Time - 10 hours (i’m being generous idk if it’s going to take that long)
+
+
+Week 8 : 10/14/2025 - 10/20/2025
+* Add javascript to make the questions appear and record user choice: Time - 10 hours (includes writing, researching, debugging) 
+
+
+Week 9 : 10/21/2025 - 10/27/2025
+* Design the loading page when users answer all questions: Time - 2 hours
+* Code loading page: Time - 1 hour
+* Code a landing page for every major that includes career paths, and further resources: Time - 10 hours (there will be around 20 in total, I have to add a few.) 
+
+
+Week 10 : 10/28/2025 - 11/3/2025
+* Add all questions and answers into the website gradually and test as I go: Time - 10 hours
+* Get friends and family to test it and see if they think it’s accurate: Time - 3 hours
+
+
+Week 11 : 11/4/2025 - 11/10/2025
+* Polish project, finishing touches
+
+
+This is if everything goes to plan, other things will definitely show up.
