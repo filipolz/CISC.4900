@@ -1,0 +1,108 @@
+﻿
+1st set of questions for each personality
+Answers will be based off of 
+* Very Interested
+* Somewhat Interested
+* A little Interested
+* Not Interested
+
+
+Realistic:
+1. How interested are you in building or fixing things with your hands (like assembling furniture or repairing a bike)?
+2. Does a job that involves working outdoors, with plants or animals, sound appealing to you?
+3. How do you feel about operating machinery or using complex tools to create something?
+4. Would you enjoy a career that requires physical activity and working in different environments?
+5. Are you interested in understanding how mechanical systems (like a car engine) work?
+
+Investigative:
+1. How interested are you in conducting scientific experiments to find an answer to a question?
+2. Do you enjoy solving complex puzzles or math problems that require deep thinking?
+3. Does the idea of researching a topic for hours to become an expert on it sound exciting?
+4. How much do you enjoy analyzing data or looking for patterns to draw conclusions?
+5. Are you interested in medicine or biology and understanding how the human body works?
+
+Artistic: 
+1. How much do you enjoy expressing your ideas through writing, poetry, or storytelling?
+2. Are you interested in creating visual art, such as drawing, painting, or graphic design?
+3. Do you enjoy coming up with imaginative and unconventional solutions to problems?
+
+Social: 
+1. Do you feel fulfilled when you can help people work through their personal problems?
+2. Does working as part of a team on a community service project sound appealing?
+3. Do you enjoy listening to people's stories and understanding different perspectives?
+4. How interested are you in a career focused on healthcare and caring for others (nursing or therapy)?
+
+Enterprising:
+1. Are you interested in starting your own business?
+2. How do you feel about public speaking or presenting an idea to a group of people?
+3. Do you enjoy debating issues and convincing others to see your point of view?
+4. Are you interested in politics, law, or leading a team to achieve a common goal?
+
+Conventional:
+1. Does a job that has clear, predictable tasks and procedures sound comfortable to you?
+2. Are you interested in working with numbers, such as in accounting, budgeting, or analyzing financial data?
+3. How do you feel about managing details and ensuring that every part of a plan is accurate?
+
+
+
+2nd set of questions presents scenarios
+
+1. A group project is assigned. What is your immediate role?
+* I’ll take the lead, organize the workflow, and assign tasks to everyone. (Enterprising)
+* I'll dive into the research to find all the facts and data we need. (Investigative)
+* I'll volunteer to design the presentation slides and create the visuals. (Artistic)
+* I’ll be the mediator, making sure everyone is heard and the team works together smoothly. (Social)
+
+2. You're given a $100 budget to improve your school. What do you do?
+* Use it to buy supplies for a club that helps students in need. (Social)
+* Invest it in a bake sale to try and turn it into $500 for a bigger project. (Enterprising)
+* Buy tools to fix that wobbly table in the library or plant a small garden. (Realistic)
+* Create a detailed spending plan and present it to the school council for approval. (Conventional)
+
+3. When you're watching a movie, what are you paying the most attention to?
+* The cinematography, the music, and the overall visual style. (Artistic)
+* The plot holes, the character motivations, and trying to predict the ending. (Investigative)
+* The relationships between the characters and how they interact. (Social)
+* The special effects, stunts, and how they made everything look so real. (Realistic)
+
+4. You have a free weekend with no homework. What are you most likely doing?
+* Going hiking, working on my car, or building something. (Realistic)
+* Volunteering for a local cause or organizing a get-together with friends. (Social)
+* Cleaning my room and planning my schedule for the upcoming week. (Conventional)
+* Writing, drawing, playing an instrument, or visiting an art museum. (Artistic)
+
+5. Which part of planning a party sounds most fun to you?
+* Creating the guest list, budget spreadsheet, and a minute-by-minute schedule. (Conventional)
+* Designing the invitations and decorations to fit a creative theme. (Artistic)
+* Promoting the party and convincing all the most interesting people to come. (Enterprising)
+* Greeting guests at the door and making sure everyone is having a good time. (Social)
+
+6. When you play a video game, what kind of role do you prefer? 
+* A support character who heals the team and helps others. (Social) 
+* The team leader who develops the strategy and gives commands. (Enterprising)
+* A scout or strategist who analyzes the map and finds the enemy's weaknesses. (Investigative)
+* An action-oriented character who is in the middle of the fight. (Realistic)
+
+7. You're asked to give a presentation. What do you focus on most?
+* Ensuring all my information is well-researched, accurate, and cited. (Investigative)
+* Delivering a powerful and persuasive speech that wins the audience over. (Enterprising)
+* Creating a visually stunning slideshow that captures everyone's attention. (Artistic)
+* Making sure my presentation is perfectly organized and follows all the requirements. (Conventional)
+
+8. How do you prefer to learn something new?
+* By jumping in and learning through trial-and-error. (Realistic)
+* By reading books and articles to understand the theory behind it first. (Investigative)
+* By taking a class or having a mentor teach me directly. (Social) 
+* By following a step-by-step instruction manual or online tutorial. (Conventional)
+
+9. How do you prefer to learn something new?
+* The natural history section with dinosaur skeletons and scientific displays. (Investigative)
+* The modern art gallery with abstract paintings and sculptures. (Artistic)
+* The technology wing with interactive exhibits of machines and engines. (Realistic)
+* A special exhibit on cultural history and how different societies lived. (Social)
+
+10. When you disagree with someone, you are most likely to:
+* Debate them confidently, using persuasion to win them over to my side. (Enterprising)
+* Try to find a compromise and understand their point of view. (Social)
+* Present them with facts and logical arguments to prove your point. (Investigative)
+* Avoid conflict and stick to the established rules or guidelines. (Conventional)
