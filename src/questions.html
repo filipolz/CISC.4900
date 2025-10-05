@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Major - Quiz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, rgba(118, 172, 203, 0.8) 0%, rgba(84, 165, 227, 0.8) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 3rem;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, rgba(118, 172, 203, 0.8) 0%, rgba(84, 165, 227, 0.8) 0%);
+            border-radius: 10px;
+            width: 10%;
+            transition: width 0.5s ease;
+        }
+
+        .question-number {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .question {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 2.5rem;
+            line-height: 1.4;
+            font-weight: 600;
+        }
+
+        .answers {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .answer-option {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .answer-option:hover {
+            border-color: #667eea;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .answer-option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .answer-letter {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #667eea;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .answer-option.selected .answer-letter {
+            background: linear-gradient(135deg, rgba(118, 172, 203, 0.8) 0%, rgba(84, 165, 227, 0.8) 0%);
+            color: white;
+        }
+
+        .answer-text {
+            font-size: 1.1rem;
+            color: #333;
+            flex: 1;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2.5rem;
+            gap: 1rem;
+        }
+
+        .nav-button {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back {
+            background: #f5f5f5;
+            color: #666;
+        }
+
+        .btn-back:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        .btn-next {
+            background: linear-gradient(135deg, rgba(118, 172, 203, 0.8) 0%, rgba(84, 165, 227, 0.8) 0%);
+            color: white;
+            flex: 1;
+            max-width: 200px;
+            margin-left: auto;
+        }
+
+        .btn-next:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-next:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        @media (max-width: 768px) {
+            .quiz-container {
+                padding: 2rem;
+            }
+
+            .question {
+                font-size: 1.4rem;
+            }
+
+            .answer-text {
+                font-size: 1rem;
+            }
+
+            .navigation {
+                flex-direction: column;
+            }
+
+            .btn-next {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="question-number" id="questionNumber">Question 1 of 5</div>
+        <h2 class="question" id="questionText">What type of activities do you enjoy most in your free time?</h2>
+
+        <div class="answers" id="answersContainer">
+            <div class="answer-option" onclick="selectAnswer(this, 0)">
+                <div class="answer-letter">A</div>
+                <div class="answer-text">Creating art, writing, or engaging in other creative pursuits</div>
+            </div>
+            <div class="answer-option" onclick="selectAnswer(this, 1)">
+                <div class="answer-letter">B</div>
+                <div class="answer-text">Solving puzzles, coding, or working with numbers and logic</div>
+            </div>
+            <div class="answer-option" onclick="selectAnswer(this, 2)">
+                <div class="answer-letter">C</div>
+                <div class="answer-text">Helping others, volunteering, or social activities</div>
+            </div>
+            <div class="answer-option" onclick="selectAnswer(this, 3)">
+                <div class="answer-letter">D</div>
+                <div class="answer-text">Playing sports, outdoor adventures, or hands-on projects</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-button btn-back" onclick="goBack()">← Back</button>
+            <button class="nav-button btn-next" id="nextButton" onclick="nextQuestion()" disabled>Next →</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedAnswerIndex = null;
+        let currentQuestion = 1;
+        const totalQuestions = 5;
+
+        function selectAnswer(element, index) {
+            document.querySelectorAll('.answer-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+
+            // Selection to clicked option
+            element.classList.add('selected');
+            selectedAnswerIndex = index;
+
+            // Next button
+            document.getElementById('nextButton').disabled = false;
+        }
+
+        function nextQuestion() {
+            if (selectedAnswerIndex === null) return;
+
+            // Animate out
+            const container = document.querySelector('.quiz-container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(-20px)';
+
+            setTimeout(() => {
+                currentQuestion++;
+                
+                const progress = (currentQuestion / totalQuestions) * 100;
+                document.getElementById('progressBar').style.width = progress + '%';
+
+                document.getElementById('questionNumber').textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+
+                document.querySelectorAll('.answer-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                selectedAnswerIndex = null;
+                document.getElementById('nextButton').disabled = true;
+
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+
+                if (currentQuestion > totalQuestions) {
+                    currentQuestion = 1;
+                    document.getElementById('progressBar').style.width = '6.67%';
+                    document.getElementById('questionNumber').textContent = 'Question 1 of 5';
+                }
+            }, 300);
+        }
+
+        function goBack() {
+            if (currentQuestion > 1) {
+                currentQuestion--;
+                const progress = (currentQuestion / totalQuestions) * 100;
+                document.getElementById('progressBar').style.width = progress + '%';
+                document.getElementById('questionNumber').textContent = `Question ${currentQuestion} of ${totalQuestions}`;
+            } else {
+                // Back to landing page
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Transition for quiz container
+        document.querySelector('.quiz-container').style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    </script>
+</body>
+</html>
