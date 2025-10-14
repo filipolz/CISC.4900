@@ -1,0 +1,18 @@
+Create an array to hold all quiz questions.
+Each question is an object.
+Each object contains the question text (a string) and a list of answers (an array).
+Each answer is an object with its text and its associated Holland code 
+('R', 'I', 'A', 'S', 'E', or 'C').
+
+
+const quizData = [
+{
+question: "" ,
+answers: [
+    answer 1 code "A"
+    answer 2 code "R"
+    answer 3 code "S"
+    asnwer 4 code "E"
+]
+}    
+]
