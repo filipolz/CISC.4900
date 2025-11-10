@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find My Major - Quiz</title>
     <style>
-        /* Your existing CSS is perfect. No changes needed here. */
         * {
             margin: 0;
             padding: 0;
@@ -31,7 +30,7 @@
             width: 100%;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             animation: slideIn 0.6s ease-out;
-            transition: height 0.5s ease; /* Added for smooth transition to results */
+            transition: height 0.5s ease; 
         }
 
         @keyframes slideIn {
@@ -45,7 +44,6 @@
             }
         }
 
-        /* This container will hold the quiz content */
         #quiz-content {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
@@ -63,7 +61,7 @@
             height: 100%;
             background: linear-gradient(90deg, rgba(118, 172, 203, 0.8) 0%, rgba(84, 165, 227, 0.8) 0%);
             border-radius: 10px;
-            width: 0%; /* Start at 0, will be set by JS */
+            width: 0%; 
             transition: width 0.5s ease;
         }
 
@@ -82,7 +80,7 @@
             margin-bottom: 2.5rem;
             line-height: 1.4;
             font-weight: 600;
-            min-height: 100px; /* Give space for text to load */
+            min-height: 100px;
         }
 
         .answers {
@@ -141,7 +139,7 @@
 
         .navigation {
             display: flex;
-            justify-content: flex-end; /* Only show Next button */
+            justify-content: flex-end; 
             margin-top: 2.5rem;
             gap: 1rem;
         }
@@ -175,9 +173,8 @@
             transform: none;
         }
 
-        /* Results Page Styling */
         #results-container {
-            display: none; /* Hidden by default */
+            display: none; 
             text-align: center;
             animation: slideIn 0.6s ease-out;
         }
