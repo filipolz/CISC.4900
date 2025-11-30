@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Major - Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div class="quiz-container" id="quizContainer">
+        
+        <div id="quiz-content">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+
+            <div class="question-number" id="questionNumber"></div>
+            <h2 class="question" id="questionText"></h2>
+            <div class="answers" id="answersContainer"></div>
+        </div>
+
+        <div id="results-container">
+            <h2 id="result-title">Your Top Personality Type is:</h2>
+            <p id="result-code"></p>
+            <h3>Recommended Top 3 Majors:</h3>
+            <ul id="majors-list"></ul>
+            <button class="nav-button btn-next btn-restart" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+
+        <div class="navigation" id="navigationContainer">
+            <button class="nav-button btn-next" id="nextButton" onclick="nextQuestion()" disabled>Next →</button>
+        </div>
+    </div>
+
+    <script src="js/quiz-questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
