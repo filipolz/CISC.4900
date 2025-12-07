@@ -12,6 +12,9 @@ const MAJORS_DATA = [
     // Artistic (A)
     { name: "Visual and Performing Arts", required: ["A"] },
     { name: "English Language and Literature", required: ["A", "S", "I"] },
+    { name: "Journalism", required: ["A", "S"] },
+    { name: "Graphic Design", required: ["A", "R"] },
+    { name: "Art History", required: ["A", "I"] },
 
     // Social (S)
     { name: "Nursing", required: ["S", "I", "R"] },
@@ -25,10 +28,22 @@ const MAJORS_DATA = [
     { name: "Business Administration", required: ["E", "C", "S"] },
     { name: "Finance", required: ["E", "C", "I"] },
     { name: "Marketing", required: ["E", "A", "S"] },
+    { name: "Entrepreneurship", required: ["E", "C"] },
+    { name: "Hospitality Management", required: ["E", "S"] },
+    
+    // Realistic (R)
+    { name: "Mechanical Engineering", required: ["R", "I"] },
+    { name: "Civil Engineering", required: ["R", "I"] },
+    { name: "Environmental Science", required: ["R", "I"] },
+    { name: "Agriculture", required: ["R", "I"] },
+    { name: "Forestry", required: ["R", "I"] },
+    { name: "Construction Management", required: ["R", "E"] },
+    { name: "Automotive Technology", required: ["R", "C"] },
 
     // Conventional (C)
     { name: "Accounting", required: ["C", "E", "I"] },
-    { name: "Data Science", required: ["C", "I"] }
+    { name: "Data Science", required: ["C", "I"] },
+    { name: "Information Systems", required: ["C", "I"] }
 ];
 
 const PERSONALITY_NAMES = {
