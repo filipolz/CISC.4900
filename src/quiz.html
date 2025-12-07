@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
+
     <div class="quiz-container" id="quizContainer">
         
         <div id="quiz-content">
@@ -32,7 +33,21 @@
         </div>
     </div>
 
+    <div class="modal-overlay" id="resourceModal" onclick="handleModalClick(event)">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Major Name</h2>
+            </div>
+            <p class="modal-desc" id="modalDesc">Description goes here.</p>
+            <h4>Recommended Resources:</h4>
+            <br>
+            <ul class="resource-links" id="modalResources"></ul>
+        </div>
+    </div>
+
     <script src="js/quiz-questions.js"></script>
     <script src="js/quiz.js"></script>
+    <script src="js/quiz-data.js"></script>
 </body>
 </html>
